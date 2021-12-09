@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.poster-card_container,
+.favorite_section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, max-content));
+  grid-gap: 40px;
+  margin: 50px auto;
+}
+
+.card_container {
+  text-align: center;
+  position: relative;
+}
+
+.img-item {
+  width: 240px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.buttom_container {
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.icon-style {
+  color: #ffcd3c;
+  font-size: 30px;
+  transition: all 0.1s;
+}
+
+.icon-style:hover {
+  color: #fff;
+  transform: rotate(360deg);
+  cursor: pointer;
+}
